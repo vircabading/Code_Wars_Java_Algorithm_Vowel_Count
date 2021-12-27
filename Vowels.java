@@ -8,19 +8,14 @@ public class Vowels {
         int vowelsCount = 0;
         
         for (int idx=0; idx < str.length(); idx++) {
-            if ( isVowel(str[idx]) ) {
+            if (    str[idx].equals("a") || 
+                    str[idx].equals("e") ||  
+                    str[idx].equals("i") ||
+                    str[idx].equals("o") ||
+                    str[idx].equals("u")) {
                 vowelsCount++;
             }
         }
-
         return vowelsCount;
-    }
-
-    public static boolean isVowel(String char) {
-        if ( (char.equals("a") || (char.equals("e") || (char.equals("i") || (char.equals("o") || (char.equals("u") ) {
-            return true;
-        }
-        return false;
-    }
-  
+    }  
 }
